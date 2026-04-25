@@ -4,9 +4,9 @@ const demos = [
     route: "/bridgechat",
     status: "Live",
     description:
-      "A standalone demo experience exposed through this router so it can be shared from a clean, memorable path.",
-    tags: ["Chat", "Standalone Repo", "Vercel"],
-    note: "Routed from this domain into its dedicated deployment.",
+      "A live demo you can open and explore right away.",
+    tags: ["Interactive", "Conversation", "Live Demo"],
+    note: "Open it directly and experience it in the browser.",
     href: "/bridgechat",
     cta: "Open demo",
   },
@@ -18,12 +18,12 @@ const stats = [
     value: String(demos.length).padStart(2, "0"),
   },
   {
-    label: "Hosting",
-    value: "Vercel",
+    label: "Current focus",
+    value: "Demos",
   },
   {
-    label: "Structure",
-    value: "Multi-repo",
+    label: "Updated",
+    value: "Ongoing",
   },
 ];
 
@@ -83,16 +83,16 @@ function renderDemos() {
       </div>
       <h3>More demos are on the way</h3>
       <p class="demo-card-description">
-        This page is already structured so the next project only needs one more
-        data entry and a matching Vercel rewrite.
+        This gallery will continue to grow as more projects are ready to be
+        shared.
       </p>
       <div class="card-tags">
-        <span class="tag">Scalable</span>
-        <span class="tag">Easy to extend</span>
-        <span class="tag">Consistent brand</span>
+        <span class="tag">New work</span>
+        <span class="tag">Experiments</span>
+        <span class="tag">Coming soon</span>
       </div>
       <div class="card-footer">
-        <p class="card-note">Add another object in <code>app.js</code> when the next demo is ready.</p>
+        <p class="card-note">More interactive projects will appear here soon.</p>
       </div>
     </article>
   `;
