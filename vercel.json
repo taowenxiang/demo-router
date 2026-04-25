@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/bridgechat",
+      "destination": "/bridgechat/",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/bridgechat/:path*",
