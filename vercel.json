@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/bridgechat/:path*",
+      "destination": "https://bridge-chat-theta.vercel.app/:path*"
+    }
+  ]
+}
