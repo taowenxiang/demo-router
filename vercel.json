@@ -1,15 +1,12 @@
 {
-  "redirects": [
-    {
-      "source": "/bridgechat",
-      "destination": "/bridgechat/",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
+      "source": "/bridgechat",
+      "destination": "https://bridge-chat-theta.vercel.app/bridgechat"
+    },
+    {
       "source": "/bridgechat/:path*",
-      "destination": "https://bridge-chat-theta.vercel.app/:path*"
+      "destination": "https://bridge-chat-theta.vercel.app/bridgechat/:path*"
     }
   ]
 }
