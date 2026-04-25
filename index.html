@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Router | Wenxiang TAO</title>
+    <meta
+      name="description"
+      content="A curated router for Wenxiang TAO's interactive demos, available through demo.wenxiangtao.com."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-nav">
+        <div class="brand-lockup">
+          <span class="brand-badge">demo.wenxiangtao.com</span>
+          <span class="brand-copy">Router for standalone demo repos</span>
+        </div>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#demos">Demos</a>
+          <a href="#workflow">Workflow</a>
+          <a href="https://wenxiangtao.com" target="_blank" rel="noreferrer">Main Site</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section" id="top">
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-large" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-small" aria-hidden="true"></div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Demo Router</p>
+            <h1>
+              A focused home for
+              <span class="gradient-text">interactive demos</span>
+            </h1>
+            <p class="hero-description">
+              This subdomain collects standalone demo projects behind one clean
+              entry point. Each demo can live in its own GitHub repository while
+              still being presented through a consistent Wenxiang TAO web
+              identity.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="#demos">Explore demos</a>
+              <a
+                class="secondary-button"
+                href="https://wenxiangtao.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit main site
+              </a>
+            </div>
+
+            <dl class="hero-stats" id="hero-stats"></dl>
+          </div>
+
+          <aside class="hero-panel glass-card">
+            <p class="panel-label">Current routing pattern</p>
+            <div class="route-snippet">
+              <span>demo.wenxiangtao.com</span>
+              <strong>/slug</strong>
+            </div>
+            <p class="panel-description">
+              Use a memorable path to jump straight into a selected demo without
+              mixing all projects into a single codebase.
+            </p>
+            <ul class="panel-points">
+              <li>Independent deployment per project</li>
+              <li>Unified public-facing index page</li>
+              <li>Fast to extend with new demo cards</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="section-block" id="demos">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Live demos on this router</h2>
+            <p>
+              A small collection for now, with room to grow. New projects can
+              be added as independent repos and surfaced here with a single card
+              entry.
+            </p>
+          </div>
+          <div class="demo-grid" id="demo-grid"></div>
+        </section>
+
+        <section class="section-block workflow-section" id="workflow">
+          <div class="section-heading">
+            <p class="eyebrow">Structure</p>
+            <h2>How this setup works</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="glass-card workflow-card">
+              <span class="workflow-step">01</span>
+              <h3>Build demos separately</h3>
+              <p>
+                Each demo can have its own repository, tech stack, and deploy
+                pipeline without forcing everything into one monorepo.
+              </p>
+            </article>
+            <article class="glass-card workflow-card">
+              <span class="workflow-step">02</span>
+              <h3>Route through one domain</h3>
+              <p>
+                Vercel rewrites map a clean path like
+                <code>/bridgechat</code> to the live deployment for that demo.
+              </p>
+            </article>
+            <article class="glass-card workflow-card">
+              <span class="workflow-step">03</span>
+              <h3>Present them consistently</h3>
+              <p>
+                This landing page keeps the same visual language as the main
+                site, so demos feel connected instead of scattered.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p><span id="footer-year"></span> Wenxiang TAO. Demo router for interactive work.</p>
+        <div class="footer-links">
+          <a href="https://wenxiangtao.com" target="_blank" rel="noreferrer">wenxiangtao.com</a>
+          <a href="https://github.com/taowenxiang" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
