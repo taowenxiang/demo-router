@@ -7,6 +7,22 @@
     {
       "source": "/bridgechat/:path*",
       "destination": "https://bridge-chat-theta.vercel.app/bridgechat/:path*"
+    },
+    {
+      "source": "/kgti/assets/:path*",
+      "destination": "https://kgti-web.vercel.app/kgti/assets/:path*"
+    },
+    {
+      "source": "/kgti/images/:path*",
+      "destination": "https://kgti-web.vercel.app/kgti/images/:path*"
+    },
+    {
+      "source": "/kgti",
+      "destination": "https://kgti-web.vercel.app/kgti"
+    },
+    {
+      "source": "/kgti/:path*",
+      "destination": "https://kgti-web.vercel.app/kgti/:path*"
     }
   ]
 }
