@@ -10,6 +10,17 @@ const demos = [
     href: "/bridgechat",
     cta: "Open demo",
   },
+  {
+    title: "KGTI",
+    route: "/kgti",
+    status: "Live",
+    description:
+      "Interactive web demo served from the KGTI project — open it in the browser to explore.",
+    tags: ["Interactive", "Web", "Live Demo"],
+    note: "Routed to the live deployment; assets load under the same path prefix.",
+    href: "/kgti",
+    cta: "Open demo",
+  },
 ];
 
 const stats = [
